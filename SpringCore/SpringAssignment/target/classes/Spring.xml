@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+												
+	<bean id="Customer" class="org.spring.Assignment1.Customer">
+		<property name="customerId" value="101" />
+		<property name="customerName" value="Venkat" />
+		<property name="customerContact" value="9247911281" />
+		<property name="customerAddress" ref="Customeraddress" />
+	</bean>
+	
+
+						<!--  By Using Setter Injection  -->
+		
+	<!--  
+	<bean id="Customeraddress" class="org.spring.Assignment1.Address">
+		<property name="street" value="HeavenDown" />
+		<property name="city" value="Hyderabad" />
+		<property name="state" value="Telangana" />
+		<property name="zip" value="501301" />
+		<property name="country" value="India" />
+	</bean>
+-->						
+						<!--  By Using Constructor Injection  -->
+						
+	<bean id="Customeraddress" class="org.spring.Assignment1.Address">
+		<constructor-arg index="0" value="HeavenDown" />
+		<constructor-arg index="1" value="Hyderabad" />
+		<constructor-arg index="2" value="Telangana" />
+		<constructor-arg index="3" value="501301" />
+		<constructor-arg index="4" value="India" />
+	</bean>				
+		
+	
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+												
+	<bean id="Employee" class="org.spring.Assignment9.Employee" init-method="myInit" destroy-method="myDestroy">
+		<property name="employeeName" value="Venkat" />
+		<property name="employeeAddress" value="Hyderabad" />
+	</bean>
+	
+	
+</beans>

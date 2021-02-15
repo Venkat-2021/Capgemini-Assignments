@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+												
+	<bean id="Employee" class="org.spring.Assignment10.Employee">
+		<property name="employeeName" value="Venkat" />
+		<property name="employeeAddress" ref="Employeeaddress" />
+	</bean>
+	
+
+						<!--  By Using Setter Injection  -->
+		
+	  
+	<bean id="Employeeaddress" class="org.spring.Assignment10.Address">
+		<property name="city" value="Hyderabad" />
+		<property name="state" value="Telangana" />
+		<property name="country" value="India" />
+	</bean>
+		
+		
+	
+</beans>

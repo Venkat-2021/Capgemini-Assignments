@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="Question" class="org.spring.Assignment2.Question">
+		<property name="QuestionId" value="01" />
+		<property name="question" value="What are the fetures of Java?" />
+		<property name="AnswersList">
+		<list>
+			<value>Object Oriented</value>
+			<value>Platform Independent</value>
+			<value>Multithreaded</value>
+			<value>Secure</value>
+			<value>Interpreted</value>
+			<value>Dynamic</value>
+		</list>
+		</property>
+		
+		<property name="AnswersSet">
+		<set>
+			<value>Object Oriented</value>
+			<value>Platform Independent</value>
+			<value>Multithreaded</value>
+			<value>Secure</value>
+			<value>Interpreted</value>
+			<value>Dynamic</value>
+		</set>
+		</property>
+		
+		<property name="AnswersMap">
+		<map>
+			<entry key="1" value="Object Oriented"/>
+			<entry key="2" value="Platform Independent"/>
+			<entry key="3" value="Multithreaded"/>
+			<entry key="4" value="Secure"/>
+			<entry key="5" value="Interpreted"/>
+			<entry key="6" value="Dynamic"/>
+		</map>
+		</property>
+		
+	</bean>
+    
+</beans>    
