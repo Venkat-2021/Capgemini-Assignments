@@ -18,7 +18,7 @@
 	<ctx:component-scan base-package="org.springMVC.Assignment3"></ctx:component-scan>
 	<ctx:component-scan base-package="org.springMVC.Assignment4"></ctx:component-scan>
 	<ctx:component-scan base-package="org.springMVC.Assignment5"></ctx:component-scan>
-	<ctx:component-scan base-package="org.springMVC.Assignment6"></ctx:component-scan>
+	<!-- <ctx:component-scan base-package="org.springMVC.Assignment6"></ctx:component-scan> -->
 	<ctx:component-scan base-package="org.springMVC.Assignment7"></ctx:component-scan>
 	
 	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
