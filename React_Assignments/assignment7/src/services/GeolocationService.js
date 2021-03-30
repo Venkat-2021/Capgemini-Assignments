@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://www.googleapis.com/geolocation/v1/geolocate';
-const API_KEY = 'AIzaSyCiLwJiA0cizuv1Z0ksOZKLm0Vkjm29ds0';
+const API_KEY = '';
 
 class GeolocationService {
 
